@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-color: #a1d6e2;
+  
+  margin: 1em;
+  font-family: 'poppins';
+  
+}
+h1:hover{
+  animation: 1.5s shake infinite alternate;
+}
+img {
+  transition: transform .5s;
+}
+img:hover {
+  transform: scale(1.15);
+}
+.navbar{
+  height: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin:0 ;
+  padding:0;
+  display:flex;
+}
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+ul a{
+  display: block;
+  padding: 0em;
+  
+}
+li {
+  padding: 3em;
+}
+img {
+  width : 100%;
+}
+.navbar{
+  background-color:rgb(11, 2, 49);
+  
+}
+.navbar a{
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+}
+header .logo{
+  color:cornflowerblue;
+  font-weight: bold;
+  padding-left: 1em;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo:hover{
+  animation: 1.5s shake infinite alternate;
+}
+
+header nav{
+  float: right;
+}
+header ul {
+  display:flex;
+}
+header ul a {
+  
+  display: block ; 
+  font-size: 2em;
+}
+.navbaritems li a:hover{
+background-color:purple;
+}
+
+/****************/
+.introduction{
+  display: flex;
+  padding: 2em;
+  padding-left: 4em;
+  border-color: black;
+  border-width:1em;
+  align-items: center;
+  justify-content: center;
+  background-color: #a1d6e2;
+}
+.hello{
+  font-size:3em;
+  margin: 1em;
+  color: black;
+}
+
+.introduction h1 span{
+  color:grey;
+  font-size: 2em;
+}
+.biosection{
+  
+  text-align: center;
+  background-color: lightseagreen;
+  margin: 0;
+}
+.bio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who{
+  font-size: 4em;
+  margin: 0;
+  
+}
+.shortbio{
+  width:60%;
+  font-size: 2em;
+  
+  text-align: left;
+  margin: 0;
+  
+}
+.image{
+  width: 40vh;
+  height: 40vh;
+  border-radius: 100%;
+  
+  
+}
+
+.skills{
+  
+}
+.skills h1{
+  text-align: center;
+  font-size: 4em;
+  background-color: #a1d6e2;
+  font: black;
+  margin: 0;
+ 
+ 
+}
+
+
+
+.tagcloud {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+  }
+  .tagcloud--item:hover {
+    color: #160bf7;
+  }
+
+
+  
+  .resumepdf {
+    display: inline-block;
+    color:whitesmoke;
+    padding: 1rem 1rem;
+    position:absolute;
+    top:15px;
+    
+  }
+
+  .resumepdf:hover{
+    color: lightblue;
+  }
+
+/*contact Section */
+  .contactBox{
+    height: 50px;
+    width: 1405px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: rgb(1, 1, 2);
+  }
+
+
+  .contact{
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 50px;
+
+  }
+.ldkimg{
+  width:50px;
+  height:50px;
+  position: relative;
+  left: 400px;
+  top: -50px;
+}
+.right{
+  position: relative;
+  left: 475px;
+  top: -100px;
+  
+  
+  
+}
+.right a{
+  color: white;
+}
+
+.right a:hover{
+  color: lightblue;
+}
+
+.emailimg{
+  width:50px;
+  height:55px;
+  position: relative;
+  left: 800px;
+  top: -145px;
+}
+
+.gmail a{
+  position: relative;
+  left: 875px;
+  top: -198px;
+  color: white;
+  
+}
+
+.gmail a:hover{
+  color: lightblue;
+}
+

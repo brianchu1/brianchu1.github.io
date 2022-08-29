@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset = "UTF-8">
+       <meta name = Brian>
+       <title> Brian's Website </title>
+      <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class = "navbar"> 
+            <header>
+              <a href="index.html" class = "logo" >Brian Chu </a>  
+                <nav>
+                 <ul class = "navbaritems">
+                     <li><a href = "#"> Home </a></li>
+                     <li><a href = "Resume.pdf"> Resume</a></li>
+                     <li><a href = "#skills"> Skills </a></li>
+                     <li><a href = "#contact"> Contact </a></li>
+                 </ul>   
+                </nav>
+          </header>
+
+        </div> 
+        <main>
+            <section class = "introduction"> 
+            <h1 class = "hello">
+            Hello! I am <br> <span> Brian Chu</span>
+            </h1>
+           
+           
+            <img class = "image" src = "Brian.JPEG" alt = Brian's picture>
+
+            </section> 
+            <div class = "biosection">
+            <h1 class = "who"> WHO AM I? </h1>
+            <section class = "bio">
+            
+              <p class= shortbio>
+             I am a third year computer engineering student who is versed in multiple software and
+              hardware languages with great communication skills. 
+              I hope I can utilize and further my knowledge and make significant 
+              contributions in web developent, machine learning and software engineering. </p>
+            </section>
+            </div>
+            
+            <section id = skills class = "skills">
+                <h1> SKILLS </h1>
+            
+           
+            <span class="content">
+            <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+            </span>
+            <script>
+                const skilltext = ['C', 'C++', 'C#', 'MSSQL', 'NEO4j', 'MATLAB', 
+                'Verilog', 'ARM Assembly', 'ModelSim', 'HTML', 'CSS', 'English',
+                'Cantonese', 'Mandarin', '.NET'];
+                
+    
+
+            var tagCloud = TagCloud('.content', skilltext,{
+            radius: 250,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'fast',
+            initSpeed: 'normal',
+
+            // 0 = top
+            // 90 = left
+            // 135 = right-bottom
+            direction: 135,
+            
+            // interact with cursor move on mouse out
+            keep: true
+            
+            });
+
+            //To change the color of text randomly
+            var colors = ['#00008B',   '#218236', '#013220'];
+            var random_color = colors[Math.floor(Math.random() * colors.length)];
+            document.querySelector('.content').style.color = random_color;
+            
+            </script>
+            </section>
+
+          
+
+            <div class = contactBox>
+            <h2 class = contact id = contact>
+            Contact me @
+            </h2>
+            </div>
+            <div contactInf>
+              <div class = ldk>
+                <img class = ldkimg src = ldklogo.png alt linkdn>
+                 
+              </div>
+              <div   class="right" >
+                <a href= "https://www.linkedin.com/in/brian-chu-b05932225">
+                    My Linkedin Profile
+                </a>
+                </div>
+
+                <div class = email>
+                <img class = emailimg src = emaillogo.png alt emaillogo>
+                 
+              </div>
+              <div   class="gmail" >
+                <a href= "mailto:briankmchu@gmail.com">
+                briankmchu@gmail.com
+                </a>
+                </div>
+
+            </div> 
+        </main>
+        <footer>
+
+
+        </footer>
+
+    
+
+    </body>
+</html>
