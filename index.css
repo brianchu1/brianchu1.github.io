@@ -245,3 +245,127 @@ background-color:purple;
   color: lightblue;
 }
 
+
+/* Timeline Section Styles */
+.timeline {
+  padding: 4rem 1rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.timeline h1 {
+  text-align: center;
+  font-size: 4em;
+  background-color: #a1d6e2;
+  color: black;  /* Added color to make the text black */
+  /* margin: 0; */
+
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; /* Reduced spacing between items */
+}
+
+/* The horizontal line with arrow */
+.timeline-line {
+  position: absolute;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 100px; /* Start after first box */
+  right: 100px; /* End before last box */
+  transform: translateY(-50%);
+}
+
+/* Arrow at the end of the line */
+.timeline-line::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 12px solid black;
+}
+
+/* Timeline items */
+.timeline-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  min-width: 200px; /* Ensure minimum width */
+}
+
+/* Bubble style for each event */
+.timeline-bubble {
+  width: 200px; /* Reduced width */
+  height: 140px; /* Slightly reduced height */
+  padding: 1rem;
+  background: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-bubble h2 {
+  margin: 0 0 0.8rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.timeline-bubble p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.85rem;
+}
+
+/* Hover effect */
+.timeline-bubble:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* For smaller screens */
+@media (max-width: 1000px) {
+  .timeline-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .timeline-line {
+    width: 2px;
+    height: calc(100% - 280px);
+    left: 50%;
+    top: 140px;
+    transform: translateX(-50%);
+  }
+
+  .timeline-line::after {
+    right: 50%;
+    top: auto;
+    bottom: -10px;
+    transform: translateX(50%) rotate(90deg);
+  }
+
+  .timeline-bubble {
+    width: 250px;
+    height: 130px;
+  }
+}
